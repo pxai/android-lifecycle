@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
         log("Restoring Instance State");
-        Log.d("Restored value1: " + bundle.getString("Something") , "PELLODEBUG");
-        Log.d("Restored value2: " + bundle.getString("Another") , "PELLODEBUG");
+        Log.d("PELLODEBUG", "Restored value1: " + bundle.getString("Something") );
+        Log.d("PELLODEBUG","Restored value2: " + bundle.getString("Another") );
     }
 
     /**
@@ -135,6 +135,6 @@ public class MainActivity extends AppCompatActivity {
      * @param msg
      */
     private void log (String msg) {
-        Log.d("LifeCycle["+(counter++)+"]> "+msg,"PELLODEBUG");
+        Log.d("PELLODEBUG","LifeCycle["+(counter++)+"]> "+msg);
     }
 }
